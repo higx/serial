@@ -1,0 +1,7 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: golang:latest
+      shellScript: go build -o test ./main.go
+timeout: 60
